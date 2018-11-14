@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  </head>
+  <body onload="startGame()">
+    <h1>Tic Tac Toe</h1>
+    <div id="message">
+      Massage Goes Here
+    </div>
+    <table>
+    <tr>
+      <td class="Square a" id="s1" ></td>
+      <td class="Square b" id="s2" ></td>
+      <td class="Square c" id="s3" ></td>
+    </tr>
+    <tr>
+      <td class="Square e" id="s4" onclick="nextMove(this)"></td>
+      <td class="Square f" id="s5" onclick="nextMove(this)"></td>
+      <td class="Square g" id="s6" onclick="nextMove(this)"></td>
+    </tr>
+    <tr>
+      <td class="Square h" id="s7" onclick="nextMove(this)"></td>
+      <td class="Square i" id="s8" onclick="nextMove(this)"></td>
+      <td class="Square j" id="s9" onclick="nextMove(this)"></td>
+    </tr>
+  </table>
+  <a href="javascript: startGame();" id="restart">Start Over</a>
+<script src="tictactoe.js" type="text/javascript"></script>
+  </body>
+</html>
